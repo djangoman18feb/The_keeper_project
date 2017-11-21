@@ -1,0 +1,13 @@
+{% extends 'personal_space/base.html' %}
+    {% block content %}
+        <strong>{{topic_title }}</strong>
+        <br>
+        <br>
+    {% for step in all_steps %}
+        <ul>
+            <li><strong>Step</strong>  - {{ step.step }}</li>
+        </ul>
+    {% endfor %}
+
+    {% endblock %}
+
