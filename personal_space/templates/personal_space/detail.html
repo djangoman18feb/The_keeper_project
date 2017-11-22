@@ -1,9 +1,10 @@
 {% extends 'personal_space/base.html' %}
     {% block content %}
-        <strong>{{topic_title }}</strong>
+        <strong>{{topics.title }}</strong>
         <br>
         <br>
-    {% for step in all_steps %}
+
+    {% for step in topics.content_set.all %}
         <ul>
             <li><strong>Step</strong>  - {{ step.step }}</li>
         </ul>
